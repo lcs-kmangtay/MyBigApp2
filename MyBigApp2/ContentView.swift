@@ -12,14 +12,20 @@ struct ContentView: View {
         VStack {
             
             
-            // first set of two news posts ( a custom subview)
+            // first news post ( a custom subview)
             ExtractedView(
-                selectedColour: "yellow",
                 newsPostTitle: "The Globe and Mail",
                 newsWriting: "Maritime farmers holding breath as record dry spring wrings region",
-                timePosted: "1h ago"
+                timePosted: "1"
+            )
+            //second news post
+            ExtractedView(
+                newsPostTitle: "REUTERS",
+                newsWriting: "E. Jean Carroll seeks $10 million in damages from Trump over post-verdict statements",
+                timePosted: "1"
             )
             
+            .padding()
         }
         Spacer()
         .padding()
@@ -33,7 +39,7 @@ struct ExtractedView: View {
     //let newsPhoto: Shape
     //ignoring the photo section right now, I have it as a shape, (rectangle)
     //lets still add a colour cahnging option for fun, to mimick the photo selection
-    let selectedColour : String
+    //MARK: ATTEMPTED but failed...
     let newsPostTitle: String
     let newsWriting: String
     let timePosted: String
@@ -45,7 +51,7 @@ struct ExtractedView: View {
         HStack {
             VStack {
                 UnevenRoundedRectangle(cornerRadii: .init(topLeading: 35 , topTrailing: 35))
-                    .fill(.(selectedColour))
+                    .fill(.blue)
                     .frame ( width : 200 , height : 200 )
                 Text((newsPostTitle))
                     .frame(maxWidth: .infinity)
@@ -54,7 +60,7 @@ struct ExtractedView: View {
                     
                 Text((newsWriting))
                 HStack {
-                   Text((timePosted))
+                   Text("\(timePosted)h ago")
                     Spacer()
                     Image(systemName: "ellipsis")
                     
@@ -66,15 +72,15 @@ struct ExtractedView: View {
                 UnevenRoundedRectangle(cornerRadii: .init(topLeading: 35 , topTrailing: 35))
                     .fill(.green)
                     .frame ( width : 200 , height : 200 )
-                Text("REUTERS")
+                Text((newsPostTitle))
                     .frame(maxWidth: .infinity)
                     .foregroundColor(.white)
                 
                     .background(.black)
                     
-                Text("Maritime farmers holding breath as record dry spring wrings region")
+                Text((newsWriting))
                 HStack {
-                   Text("1h ago")
+                   Text((timePosted))
                     Spacer()
                     Image(systemName: "ellipsis")
                     
