@@ -10,6 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
+            
+            // first set of two news posts
             HStack {
                 VStack {
                     UnevenRoundedRectangle(cornerRadii: .init(topLeading: 35 , topTrailing: 35))
@@ -30,10 +32,10 @@ struct ContentView: View {
               
             
                 VStack{
-                    RoundedRectangle(cornerRadius: 35)
+                    UnevenRoundedRectangle(cornerRadii: .init(topLeading: 35 , topTrailing: 35))
                         .fill(.green)
                         .frame ( width : 200 , height : 200 )
-                    Text("The Globe and Mail")
+                    Text("REUTERS")
                         .frame(maxWidth: .infinity)
                         .foregroundColor(.white)
                     
@@ -49,6 +51,9 @@ struct ContentView: View {
                     
                 }
             }
+            // second set of two news posts ( a custom subview)
+            ExtractedView()
+            
         }
         Spacer()
         .padding()
@@ -58,7 +63,45 @@ struct ContentView: View {
 
 struct ExtractedView: View {
     var body: some View {
-        /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Hello, world!@*/Text("Hello, world!")/*@END_MENU_TOKEN@*/
+        HStack {
+            VStack {
+                UnevenRoundedRectangle(cornerRadii: .init(topLeading: 35 , topTrailing: 35))
+                    .frame ( width : 200 , height : 200 )
+                Text("The Globe and Mail")
+                    .frame(maxWidth: .infinity)
+                    .foregroundColor(.white)
+                    .background(.black)
+                    
+                Text("Maritime farmers holding breath as record dry spring wrings region")
+                HStack {
+                   Text("1h ago")
+                    Spacer()
+                    Image(systemName: "ellipsis")
+                    
+                }
+            }
+          
+        
+            VStack{
+                UnevenRoundedRectangle(cornerRadii: .init(topLeading: 35 , topTrailing: 35))
+                    .fill(.green)
+                    .frame ( width : 200 , height : 200 )
+                Text("REUTERS")
+                    .frame(maxWidth: .infinity)
+                    .foregroundColor(.white)
+                
+                    .background(.black)
+                    
+                Text("Maritime farmers holding breath as record dry spring wrings region")
+                HStack {
+                   Text("1h ago")
+                    Spacer()
+                    Image(systemName: "ellipsis")
+                    
+                }
+                
+            }
+        }
     }
 }
 
