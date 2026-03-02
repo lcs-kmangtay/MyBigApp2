@@ -12,7 +12,7 @@ struct ContentView: View {
         VStack {
             HStack {
                 VStack {
-                    Rectangle()
+                    UnevenRoundedRectangle(cornerRadii: .init(topLeading: 35 , topTrailing: 35))
                         .frame ( width : 200 , height : 200 )
                     Text("The Globe and Mail")
                         .frame(maxWidth: .infinity)
@@ -23,25 +23,27 @@ struct ContentView: View {
                     HStack {
                        Text("1h ago")
                         Spacer()
-                       Text("...")
+                        Image(systemName: "ellipsis")
                         
                     }
                 }
               
             
                 VStack{
-                    Rectangle()
+                    RoundedRectangle(cornerRadius: 35)
+                        .fill(.green)
                         .frame ( width : 200 , height : 200 )
                     Text("The Globe and Mail")
                         .frame(maxWidth: .infinity)
                         .foregroundColor(.white)
+                    
                         .background(.black)
                         
                     Text("Maritime farmers holding breath as record dry spring wrings region")
                     HStack {
                        Text("1h ago")
                         Spacer()
-                       Text("...")
+                        Image(systemName: "ellipsis")
                         
                     }
                     
