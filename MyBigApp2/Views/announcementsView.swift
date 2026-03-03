@@ -10,41 +10,40 @@ import SwiftUI
 struct announcementsView: View {
     var body: some View {
         
-        newsView(
-            announcementTitle: "Airbands update",
-            postAuthor: "David Crispo",
-            datePosted: "4/26/2022"
-        )
+       
         
-        
+        VStack {
+            HStack {
+                Text("Announcements")
+                    .font(.largeTitle)
+                Spacer()
+                    
+            }
+            .padding()
+            
+            newsView(
+                announcementTitle: "Airbands update",
+                postAuthor: "David Crispo",
+                datePosted: "4/27/2022"
+            )
+            newsView(
+                announcementTitle: "SIC Voting Extended",
+                postAuthor: "Mr Pete O'Grady",
+                datePosted: "4/26/2022"
+            )
+            newsView(
+                announcementTitle: "Beach League",
+                postAuthor: "Ms. Tina St. John",
+                datePosted: "4/26/2022"
+            )
+            
+            
+            
+        }
     }
 }
 
-struct newsView: View {
-    
-    let announcementTitle: String
-    let postAuthor: String
-    let datePosted: String
-    
-    
-    var body: some View {
-        VStack {
-            HStack {
-                VStack {
-                    Text((announcementTitle))
-                    Text("Posted by \(postAuthor)")
-                    Text((datePosted))
-                    
-                }
-                Spacer()
-                
-                    Image(systemName: "chevron.right")
-            }
-        }
-        .padding()
-        .border(.gray)
-    }
-}
+
 
 #Preview {
     DayTwoLANDINGVIEW()

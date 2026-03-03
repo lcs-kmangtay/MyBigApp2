@@ -13,6 +13,7 @@
 		8BA6AB192F57723200DCD0F0 /* MyBigApp2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6AB142F57723200DCD0F0 /* MyBigApp2App.swift */; };
 		8BA6AB1A2F57723200DCD0F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA6AB122F57723200DCD0F0 /* Assets.xcassets */; };
 		8BA6AB1C2F5772A300DCD0F0 /* savedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6AB1B2F5772A300DCD0F0 /* savedView.swift */; };
+		8BA6AB1E2F5776E900DCD0F0 /* newsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6AB1D2F5776E900DCD0F0 /* newsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		8BA6AB132F57723200DCD0F0 /* ContentViewBigAppDayOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewBigAppDayOne.swift; sourceTree = "<group>"; };
 		8BA6AB142F57723200DCD0F0 /* MyBigApp2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBigApp2App.swift; sourceTree = "<group>"; };
 		8BA6AB1B2F5772A300DCD0F0 /* savedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = savedView.swift; sourceTree = "<group>"; };
+		8BA6AB1D2F5776E900DCD0F0 /* newsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				8BA6AB102F57723200DCD0F0 /* DayTwoLANDINGVIEW.swift */,
 				8BA6AB0F2F57723200DCD0F0 /* announcementsView.swift */,
+				8BA6AB1D2F5776E900DCD0F0 /* newsView.swift */,
 				8BA6AB1B2F5772A300DCD0F0 /* savedView.swift */,
 				8BA6AB132F57723200DCD0F0 /* ContentViewBigAppDayOne.swift */,
 			);
@@ -150,6 +153,7 @@
 				8BA6AB172F57723200DCD0F0 /* DayTwoLANDINGVIEW.swift in Sources */,
 				8BA6AB182F57723200DCD0F0 /* ContentViewBigAppDayOne.swift in Sources */,
 				8BA6AB192F57723200DCD0F0 /* MyBigApp2App.swift in Sources */,
+				8BA6AB1E2F5776E900DCD0F0 /* newsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,8 +26,9 @@ struct DayTwoLANDINGVIEW: View {
                 .tag(2)
         }
     }
+    
 }
-
+    
 #Preview {
     DayTwoLANDINGVIEW()
 }
