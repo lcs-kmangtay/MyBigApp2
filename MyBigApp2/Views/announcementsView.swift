@@ -9,12 +9,31 @@ import SwiftUI
 
 struct announcementsView: View {
     var body: some View {
+        
+        newsView(
+            announcementTitle: "Airbands update",
+            postAuthor: "David Crispo",
+            datePosted: "4/26/2022"
+        )
+        
+        
+    }
+}
+
+struct newsView: View {
+    
+    let announcementTitle: String
+    let postAuthor: String
+    let datePosted: String
+    
+    
+    var body: some View {
         VStack {
             HStack {
                 VStack {
-                    Text("Airbands Update")
-                    Text("Posted by Mr Pete O'Grady")
-                    Text("4/26/2022")
+                    Text((announcementTitle))
+                    Text("Posted by \(postAuthor)")
+                    Text((datePosted))
                     
                 }
                 Spacer()
