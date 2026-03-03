@@ -10,20 +10,21 @@ import SwiftUI
 struct DayTwoLANDINGVIEW: View {
     var body: some View {
         TabView(selection: Binding.constant(1)) {
-                   
-                announcementsView()
-                       .tabItem {
-                           Image(systemName: "globe")
-                           Text("Announcements")
-                       }
-                       .tag(1)
-                   
-                  savedView()
-                       .tabItem {
-                           Image(systemName: "alarm.fill")
-                           Text("Saved")
-                       }
-                       .tag(2)
+            
+            announcementsView()
+                .tabItem {
+                    Image(systemName: "exclamationmark")
+                    Text("Announcements")
+                }
+                .tag(1)
+            
+            savedView()
+                .tabItem {
+                    Image(systemName: "star.fill")
+                    Text("Saved")
+                }
+                .tag(2)
+        }
     }
 }
 

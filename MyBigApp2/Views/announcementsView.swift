@@ -28,5 +28,5 @@ struct announcementsView: View {
 }
 
 #Preview {
-    announcementsView()
+    DayTwoLANDINGVIEW()
 }
