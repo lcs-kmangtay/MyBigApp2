@@ -31,6 +31,7 @@ struct newsView: View {
                 
                     Image(systemName: "chevron.right")
             }
+            .frame(maxWidth: .infinity)
             .padding()
             .border(.gray)
         }

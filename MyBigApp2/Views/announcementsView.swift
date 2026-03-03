@@ -15,7 +15,7 @@ struct announcementsView: View {
         VStack {
             HStack {
                 Text("Announcements")
-                    .font(.largeTitle)
+                    .font((.system(size: 50)))
                 Spacer()
                     
             }
@@ -36,6 +36,17 @@ struct announcementsView: View {
                 postAuthor: "Ms. Tina St. John",
                 datePosted: "4/26/2022"
             )
+            newsView(
+                announcementTitle: "Dining Hall Playlists",
+                postAuthor: "Lilian Yang",
+                datePosted: "5/5/2022"
+            )
+            newsView(
+                announcementTitle: "No School Next Week",
+                postAuthor: "Logan Snopek",
+                datePosted: "5/6/2022"
+            )
+           
             
             
             
