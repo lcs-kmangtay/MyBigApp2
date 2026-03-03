@@ -80,7 +80,7 @@ struct ExtractedView: View {
                     
                 Text((newsWriting))
                 HStack {
-                   Text((timePosted))
+                   Text("\(timePosted)h ago")
                     Spacer()
                     Image(systemName: "ellipsis")
                     
